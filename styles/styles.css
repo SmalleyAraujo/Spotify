@@ -1,3 +1,12 @@
+@keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 #button2{    
     width: 80px;
     height: 10px;
@@ -7,30 +16,38 @@
 
 
 #button2:hover{
-    background-image:url(../icons/keyboard_double_arrow_left_FILL0_wght400_GRAD0_opsz48.svg) ;
+    background-image:url(../icons/arrow_back.svg) ;
     background-repeat: no-repeat;
     background-size: cover; 
     height: 80px;   
     box-shadow: 5px 10px 10px rgb(175, 214, 121);
     border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction: reverse;
 
 }
 
-#button3{
-    
+#button3{    
     width: 80px;
     height: 10px;
     border-radius: 2px;
-    background-color: aqua;
+    background-color: aqua;    
 }
 
 
 #button3:hover{
-    background-image:url(../icons/double_arrow_FILL0_wght400_GRAD0_opsz48.svg); 
+    background-image:url(../icons/arrow_forward.svg); 
     background-repeat: no-repeat;
     background-size: cover;
     height: 80px;   
     box-shadow: 5px 10px 10px rgb(175, 214, 121);
     border-radius: 50%;
-
+    animation-name: rotate;
+    animation-duration: 0.7s;
+    animation-direction:normal;
 }
+
+
+ 
+  
