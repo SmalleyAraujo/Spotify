@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/@mediaMobile.css">
 </head>
 <body>
     <div class="container-fluid m-0 p-0" >
@@ -15,7 +16,7 @@
             <!-- style="background: linear-gradient(0deg,rgba(0,0,0,1)0%, rgb(73,27,67)49%, rgb(112,27,86)100%);" -->
             <div class="container-fluid px-0 d-flex flex-row">                
                     <!-- LADO ESQUERDO -->
-                    <div class="container-fluid " style="height: alto; width: 13%; background: linear-gradient(180deg, rgba(88,18,90,1) 1%, rgba(26,3,3,1) 80%);">
+                    <div class="container-fluid ladoEsquerdo" style="height: alto; width: 13%; background: linear-gradient(180deg, rgba(88,18,90,1) 1%, rgba(26,3,3,1) 80%);">
                         <!-- style="height: 100vh; background: linear-gradient(180deg, rgba(88,18,90,1) 1%, rgba(26,3,3,1) 80%);" -->
                         <!-- Coluna Esquerda -->
                         <nav class="navbar d-flex align-items-start flex-column mb-5">
@@ -42,7 +43,7 @@
                     <!-- LADO DIREITO -->
                     <div class="container-fluid px-0" style="width: 87%; background: linear-gradient(0deg,rgba(0,0,0,1)0%, rgb(73,27,67)49%, rgb(112,27,86)100%);">
                         <header>
-                            <nav class="navbar navbar-expand-sm ">
+                            <nav class="navbar navbar-expand-sm navLink" id="navLink">
                                 <div class="container-fluid d-flex justify-content-center">                        
                                     <ul class="navbar-nav gap-5 text-white display-8">
                                         <li class="nav-item">
@@ -63,73 +64,76 @@
                                 </div>
                             </nav>
                         </header>
-                        <div class="container-fluid text-center text-white my-2">
+                        <div class="container-fluid text-center text-white my-2 d-flex justify-content-around">
                             <h1 class="display-1">Winding down...</h1>
+                            <button type="button" id="menu"><img src="icons/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="imgbutton" width="30"></button>
+                            
                         </div>
 
                         <!-- CARROSEL -->
                         <div class="carousel slide my-2" id="demo" data-bs-ride="carousel">
+                            
                             <!-- SLIDER -->
                             <div class="carousel-inner" style="height: 500px; overflow: hidden;">
                                 <!--overflow: hidden; tudo que estourar esconde  -->
                                 <div class="carousel-item active" data-interval="500">
                                 <!-- data-interval="500" determina a tempo de transição do slide -->
                                     <!-- CARDS -->
-                                    <div class="container-fluid my-3">
-                                        <div class="row d-flex justify-content-center text-center text-white">                                            
-                                            <div class="col-md-2 bg-info">
+                                    <div class="container-fluid my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">                                            
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
                                         </div>
                                     </div>                                    
                                 </div>
-                                <div class="carousel-item" data-interval="500">
+                                <div class="carousel-item " data-interval="500">
                                    <!-- CARDS -->
-                                    <div class="container-fluid">
-                                        <div class="row d-flex justify-content-center text-center text-white">
+                                    <div class="container-fluid  my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">
                                             
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
@@ -153,29 +157,29 @@
                                 <div class="carousel-item active" data-interval="500">
                                 <!-- data-interval="500" determina a tempo de transição do slide -->
                                     <!-- CARDS -->
-                                    <div class="container-fluid my-3">
-                                        <div class="row d-flex justify-content-center text-center text-white">                                            
-                                            <div class="col-md-2 bg-info">
+                                    <div class="container-fluid my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">                                            
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
@@ -184,30 +188,30 @@
                                 </div>
                                 <div class="carousel-item" data-interval="500">
                                    <!-- CARDS -->
-                                    <div class="container-fluid my-3">
-                                        <div class="row d-flex justify-content-center text-center text-white">
+                                    <div class="container-fluid my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">
                                             
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
@@ -236,29 +240,29 @@
                                 <div class="carousel-item active" data-interval="500">
                                 <!-- data-interval="500" determina a tempo de transição do slide -->
                                     <!-- CARDS -->
-                                    <div class="container-fluid my-3">
-                                        <div class="row d-flex justify-content-center text-center text-white">                                            
-                                            <div class="col-md-2 bg-info">
+                                    <div class="container-fluid my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">                                            
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
@@ -267,30 +271,30 @@
                                 </div>
                                 <div class="carousel-item" data-interval="500">
                                    <!-- CARDS -->
-                                    <div class="container-fluid my-3">
-                                        <div class="row d-flex justify-content-center text-center text-white">
+                                    <div class="container-fluid my-3 carouselMobileControl">
+                                        <div class="row d-flex justify-content-center text-center text-white carouselMobileControl">
                                             
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d00001e0208c63cf0aa88f47866a9df01.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Discover Weekly</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d00001e020f3661d1ead65b628e037b31.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilied Roots</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b2730dc783d4389fcf7b8cf89141.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Indie Arrivals</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67616d0000b2733d7eddd9401e833c32809674.jpg" style="width: 100%;" class="mx-auto card.img" alt="">
                                                 <h3>Unwind</h3>
                                             </div>
-                                            <div class="col-md-2 bg-info">
+                                            <div class="col-md-2 bg-info carouselMobile">
                                                 <img src="albuns/ab67616d0000b27384eb574e721479783cae3600.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>Chilled Classics</h3>
                                             </div>
-                                            <div class="col-md-2 bg-danger">
+                                            <div class="col-md-2 bg-danger carouselMobile">
                                                 <img src="albuns/ab67706c0000bebb132592c603bf37999f614f07.jpg" style="width: 100%;" class="mx-auto card.img" alt="" >
                                                 <h3>A1 HipHop</h3>
                                             </div>
@@ -316,6 +320,7 @@
     </div>
     
     <script src="scripts/bootstrap.bundle.js"></script>
-    <script src="scripts/bootstrap.bundle.min.js"></script>    
+    <script src="scripts/bootstrap.bundle.min.js"></script> 
+    <script src="scripts/script.js"></script>   
 </body>
 </html>
